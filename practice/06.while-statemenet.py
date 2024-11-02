@@ -15,6 +15,13 @@ else:
 # 사용자에게 숫자 하나를 입력받아서
 # 해당 횟수만큼 * 출력하기 (별 출력)
 
+count = int(input("숫자 하나를 입력하세요 >>"))
+i = 0
+stars = ""
+while i < count:
+    stars = stars + "*"
+    i = i + 1
+print(stars)
 
 # up/down
 # value = 10
