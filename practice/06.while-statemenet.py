@@ -12,6 +12,8 @@ elif num > 60:
 else:
     print("C반입니다.")
 """
+
+"""
 # 사용자에게 숫자 하나를 입력받아서
 # 해당 횟수만큼 * 출력하기 (별 출력)
 
@@ -22,6 +24,7 @@ while i < count:
     stars = stars + "*"
     i = i + 1
 print(stars)
+"""
 
 # up/down
 # value = 10
@@ -33,7 +36,26 @@ import random
 value = random.randrange(1,100)
 
 # 100 미만의 피보나치 수열 출력하기
+"""
+fibonacci = 1
+n = 0
+m = 0
 
+while fibonacci < 100:
+    print(fibonacci)
+    m = n
+    n = fibonacci
+    fibonacci = m + n
+"""
+
+fibonacci_list = [1,1]
+n = 1
+
+while fibonacci_list[n-1]+fibonacci_list[n] < 100:
+    fibonacci_list.append(fibonacci_list[n-1]+fibonacci_list[n])
+    n = n+1
+
+print(fibonacci_list)
 
 # (0,0) 시작
 # 사용자가 UP 입력하면 위로, DOWN 입력하면 아래로, LEFT 입력하면 왼쪽으로, RIGHT 입력하면 오른쪽으로
