@@ -49,6 +49,15 @@ for i in range(1, 101):
 # 2 를 입력받으면
 # 2*1=2 ~ 2*9=28
 
+print("################################")
+user_input = int(input("숫자를 입력해주세요"))
+
+for i in range(2,10):
+    print(user_input, "*", i, "=", user_input*i)
+
+print("################################")
+
+
 # 10 개의 랜덤 알파벳을 배열로 생성
 # [Q,W,A,F,S,C,G,D,E,T]
 # 하나씩 출력되며, 사용자가 해당 알파벳을 빠르게 입력하는 게임
@@ -67,5 +76,7 @@ alphabet = []
 for i in range(0,10):
     alphabet.append(chr(random.randrange(65,91)))
 
-print(alphabet[0])
-user_input = input()
+for alpha in alphabet:
+    print(alpha)
+    while user_input != alpha:
+        user_input = input("")
